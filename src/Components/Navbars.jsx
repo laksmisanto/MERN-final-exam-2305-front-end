@@ -106,13 +106,13 @@ const Navbars = () => {
                 <div className="absolute lg:flex lg:gap-x-10 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 lg:ml-10 2xl:ml-28 sm:pr-0">
                   <button
                     type="button"
-                    className="font-primary font-semibold text-xl underline p-1 text-menuColor hover:text-primary "
+                    className="font-primary font-medium text-xl underline p-1 text-menuColor hover:text-primary "
                   >
                     Login
                   </button>
                   <button
                     type="button"
-                    className="font-primary font-semibold text-xl text-white py-4 px-8 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]  "
+                    className="font-primary font-medium text-xl text-white py-4 px-8 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]  "
                   >
                     Sign in
                   </button>

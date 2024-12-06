@@ -23,6 +23,8 @@ export default {
       courseBgTop: "#F0F3FF",
       benefitBgPrimary: "#084FC7",
       categoryDescription: "#4F547B",
+      footerBgTop: "#331DA8",
+      footerBgBottom: "#865AEF",
     },
     container: {
       center: true,

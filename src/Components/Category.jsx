@@ -50,7 +50,7 @@ const Category = () => {
     },
   ];
   return (
-    <div className="bg-gradient-to-b from-courseBgBottom to-courseBgTop pt-28 pb-32">
+    <div className="bg-gradient-to-t from-courseBgBottom to-courseBgTop pt-28 pb-32">
       <Container>
         <div className="flex flex-col items-center">
           <PageTitle

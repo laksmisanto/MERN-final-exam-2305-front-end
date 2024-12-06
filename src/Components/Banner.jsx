@@ -46,7 +46,7 @@ const Banner = () => {
                     placeholder="What do you want to learn today?"
                     className="font-primary text-base w-full bg-transparent px-8 py-4 outline-none"
                   />
-                  <button className="text-base text-white flex items-center px-8 py-4 gap-x-3 bg-gradient-to-l from-bgSecondary to-bgPrimary rounded-[10px] ">
+                  <button className="font-primary font-regular text-base text-white flex items-center px-8 py-4 gap-x-3 bg-gradient-to-l from-bgSecondary to-bgPrimary rounded-[10px] ">
                     <CiSearch size={20} />
                     Search
                   </button>
