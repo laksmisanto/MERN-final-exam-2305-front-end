@@ -6,12 +6,17 @@ import imageShadow from "../assets/images/image-shadow.png";
 import bannerLeftEffect from "../assets/images/banner-left-effect.png";
 import { FaQuoteLeft } from "react-icons/fa";
 import Rating from "@mui/material/Rating";
-import { Stack } from "@mui/material";
+import client1 from "../assets/images/client1.png";
+import client2 from "../assets/images/client2.png";
+import client3 from "../assets/images/client3.png";
+import client4 from "../assets/images/client4.png";
+import client5 from "../assets/images/client5.png";
+import client6 from "../assets/images/client6.png";
 
 const Banner = () => {
   return (
     <>
-      <div className="relative bg-gradient-to-r from-bannerSecondary  to-bannerPrimary bg-opacity-10 w-full min-h-[90vh]">
+      <div className="relative bg-gradient-to-tr from-bannerSecondary  to-bannerPrimary bg-opacity-10 w-full min-h-[90vh]">
         <Container>
           <Grid className="grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-y-0 lg:gap-x-8 self-center">
             <div className="self-center">
@@ -38,6 +43,7 @@ const Banner = () => {
                 <div className="flex items-center bg-white rounded-[7px] p-[10px]">
                   <input
                     type="text"
+                    placeholder="What do you want to learn today?"
                     className="font-primary text-base w-full bg-transparent px-8 py-4 outline-none"
                   />
                   <button className="text-base text-white flex items-center px-8 py-4 gap-x-3 bg-gradient-to-l from-bgSecondary to-bgPrimary rounded-[10px] ">
@@ -98,6 +104,19 @@ const Banner = () => {
               </div>
             </div>
           </Grid>
+        </Container>
+      </div>
+      {/* our Client list section start */}
+      <div className="bg-gradient-to-bl from-[#084FC7] to-[#084ec771] py-12">
+        <Container>
+          <div className="flex items-center justify-center gap-x-36 ">
+            <img src={client1} alt="Client images" className="w-full h-auto" />
+            <img src={client2} alt="Client images" className="w-full h-auto" />
+            <img src={client3} alt="Client images" className="w-full h-auto" />
+            <img src={client4} alt="Client images" className="w-full h-auto" />
+            <img src={client5} alt="Client images" className="w-full h-auto" />
+            <img src={client6} alt="Client images" className="w-full h-auto" />
+          </div>
         </Container>
       </div>
     </>

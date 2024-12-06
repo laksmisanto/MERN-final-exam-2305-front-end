@@ -17,8 +17,12 @@ export default {
       bgSecondary: "#7F56D9",
       bannerPrimary: "#04016C",
       bannerSecondary: "#4A16BD",
-
       menuColor: "#1B2336",
+      courseTitle: "#324361",
+      courseBgBottom: "#D9ECFF",
+      courseBgTop: "#F0F3FF",
+      benefitBgPrimary: "#084FC7",
+      categoryDescription: "#4F547B",
     },
     container: {
       center: true,
