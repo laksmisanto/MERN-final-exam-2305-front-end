@@ -122,7 +122,7 @@ const Banner = () => {
       </div>
 
       {/* our Client list section start */}
-      <div className="bg-gradient-to-bl from-[#084FC7] to-[#084ec771] py-4 lg:py-8 2xl:py-12">
+      <div className="bg-gradient-to-bl from-[#084FC7] to-[#084ec771] py-4 lg:py-8 2xl:py-12 overflow-hidden">
         <Container>
           <div className="w-full flex items-center gap-x-3 lg:gap-x-24 2xl:gap-x-36">
             <img src={client1} alt="Client images" className="w-full h-auto " />
