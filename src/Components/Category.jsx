@@ -50,23 +50,24 @@ const Category = () => {
     },
   ];
   return (
-    <div className="bg-gradient-to-t from-courseBgBottom to-courseBgTop pt-28 pb-32">
-      <Container>
+    <div className="bg-gradient-to-t from-courseBgBottom to-courseBgTop">
+      <Container className="py-14 lg:py-24 2xl:py-28">
         <div className="flex flex-col items-center">
           <PageTitle
             beforeHighlight="Top"
             Highlight="Categories"
             afterHighlight=" "
+            className="text-center"
           />
-          <PageDescription className="mt-10">
+          <PageDescription className="mt-5 lg:mt-7 2xl:mt-10 text-center">
             12,000+ unique online course list designs
           </PageDescription>
         </div>
-        <Grid className="mt-24 grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-5">
+        <Grid className="mt-12 lg:mt-16 2xl:mt-24 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-5">
           {categoryData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center p-12 bg-white rounded-[20px] shadow-xl"
+              className="flex flex-col items-center text-center p-12 bg-white rounded-lg xl:rounded-2xl shadow-xl"
             >
               <div
                 className="flex justify-center items-center size-24 rounded-lg"

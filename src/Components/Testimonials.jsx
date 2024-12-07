@@ -43,32 +43,34 @@ const Testimonials = () => {
   ];
   return (
     <>
-      <div className="bg-gradient-to-t from-courseBgBottom to-courseBgTop pt-32 pb-32">
-        <Container>
+      <div className="bg-gradient-to-t from-courseBgBottom to-courseBgTop">
+        <Container className="py-14 lg:py-24 2xl:py-28">
           <div className="flex justify-center flex-col items-center">
-            <PageTitle beforeHighlight="Testimonials" />
-            <PageDescription>What our student say about us</PageDescription>
+            <PageTitle Highlight="Testimonials" className="text-center" />
+            <PageDescription className="text-center mt-5 lg:mt-7 2xl:mt-10">
+              What our student say about us
+            </PageDescription>
           </div>
-          <Grid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Grid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 lg:mt-20 2xl:mt-24">
             {testimonialData.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-[30px] shadow py-14 px-10"
+                className="bg-white rounded-lg lg:rounded-2xl 2xl:rounded-3xl shadow py-14 px-10"
               >
-                <div className="flex gap-x-8 items-center">
+                <div className="flex gap-x-4 lg:gap-x-6 2xl:gap-x-8 items-center">
                   <img
                     src={item.image}
                     alt="testimonial"
-                    className="size-16 rounded-full"
+                    className=" size-12 lg:size-14 xl:size-16 rounded-full"
                   />
-                  <h4 className="font-secondary font-bold text-2xl text-black">
+                  <h4 className="font-secondary font-bold text-lg lg:text-xl xl:text-2xl text-black">
                     {item.name}
                   </h4>
                 </div>
-                <p className="mt-10 font-primary font-regular text-lg text-gray leading-7">
+                <p className="mt-5 lg:mt-7 xl:mt-10 font-primary font-regular text-base lg:text-lg text-gray leading-6 lg:leading-7">
                   {item.description}
                 </p>
-                <div className="mt-12">
+                <div className="mt-6 lg:mt-8 xl:mt-12">
                   <Rating
                     readOnly
                     value={item.ratting}

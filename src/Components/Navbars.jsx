@@ -26,7 +26,7 @@ function classNames(...classes) {
 const Navbars = () => {
   return (
     <>
-      <div className="bg-white shadow border-b-2 border-black py-2">
+      <div className="bg-white shadow py-2">
         <Container>
           <Disclosure as="nav" className="bg-white">
             <div className=" ">
@@ -46,11 +46,12 @@ const Navbars = () => {
                     />
                   </DisclosureButton>
                 </div>
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="flex shrink-0 items-center">
+                {/* Logo and menu section start */}
+                <div className="flex flex-1 items-center justify-start  sm:items-stretch sm:justify-start">
+                  <div className="flex shrink-0 items-center ml-16 lg:ml-0">
                     <img alt="Your Company" src={logo} className="h-8 w-auto" />
                   </div>
-                  <div className="hidden sm:ml-6  xl:ml-10 2xl:ml-36 sm:block">
+                  <div className="hidden sm:ml-6  xl:ml-20 2xl:ml-36 sm:block">
                     <div className="flex space-x-5">
                       {navigation.map((item) => (
                         <a
@@ -61,17 +62,19 @@ const Navbars = () => {
                             item.current
                               ? " text-primary"
                               : "text-menuColor hover:text-primary ",
-                            "font-primary font-semibold text-lg p-1 flex gap-x-5 items-center transition-all duration-75 ease-in-out"
+                            "font-primary font-semibold text-lg p-1 flex gap-x-2 2xl:gap-x-5 items-center transition-all duration-75 ease-in-out"
                           )}
                         >
                           {item.name}
-                          <FaAngleDown size={20} />{" "}
+                          <FaAngleDown className="text-xl" />{" "}
                         </a>
                       ))}
                     </div>
                   </div>
                 </div>
-                <div className="absolute lg:flex lg:gap-x-7 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6  sm:pr-0">
+                {/* Logo and menu section end */}
+                {/* icon section start */}
+                <div className="absolute lg:flex gap-x-2 2xl:gap-x-7 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6  sm:pr-0">
                   <button
                     type="button"
                     className="relative rounded-full p-1 text-menuColor hover:text-primary focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -87,8 +90,6 @@ const Navbars = () => {
                     type="button"
                     className="relative rounded-full p-1 text-menuColor hover:text-primary focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">View notifications</span>
                     <HiOutlineUserCircle
                       aria-hidden="true"
                       className="size-6"
@@ -98,25 +99,28 @@ const Navbars = () => {
                     type="button"
                     className="relative rounded-full  p-1 text-menuColor hover:text-primary focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">View notifications</span>
                     <HiOutlineSearch aria-hidden="true" className="size-6" />
                   </button>
                 </div>
-                <div className="absolute lg:flex lg:gap-x-10 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 lg:ml-10 2xl:ml-28 sm:pr-0">
-                  <button
-                    type="button"
-                    className="font-primary font-medium text-xl underline p-1 text-menuColor hover:text-primary "
-                  >
-                    Login
-                  </button>
-                  <button
-                    type="button"
-                    className="font-primary font-medium text-xl text-white py-4 px-8 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]  "
-                  >
-                    Sign in
-                  </button>
+                {/* icon section end */}
+                {/* button section start */}
+                <div className="hidden md:block">
+                  <div className=" absolute lg:flex gap-x-6 2xl:gap-x-10 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 lg:ml-10 2xl:ml-28 sm:pr-0 sm:end-0">
+                    <button
+                      type="button"
+                      className="font-primary font-medium text-xl underline p-1 text-menuColor hover:text-primary "
+                    >
+                      Login
+                    </button>
+                    <button
+                      type="button"
+                      className="font-primary font-medium text-xl text-white py-4 px-8 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]  "
+                    >
+                      Sign in
+                    </button>
+                  </div>
                 </div>
+                {/* button section end */}
               </div>
             </div>
             {/* for mobile menu start */}
@@ -139,6 +143,24 @@ const Navbars = () => {
                   </DisclosureButton>
                 ))}
               </div>
+              {/* button section start */}
+              <DisclosureButton>
+                <div className=" lg:flex lg:gap-x-10 gap-x-8  flex items-center pr-2 sm:static sm:inset-auto ml-4 sx:ml-6 lg:ml-10 2xl:ml-28 sm:pr-0 sm:end-0">
+                  <button
+                    type="button"
+                    className="font-primary font-medium text-base underline p-1 text-menuColor hover:text-primary "
+                  >
+                    Login
+                  </button>
+                  <button
+                    type="button"
+                    className="font-primary font-medium text-base text-white py-2 px-4 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]  "
+                  >
+                    Sign in
+                  </button>
+                </div>
+              </DisclosureButton>
+              {/* button section end */}
             </DisclosurePanel>
           </Disclosure>
         </Container>

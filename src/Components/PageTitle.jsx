@@ -1,5 +1,3 @@
-import React from "react";
-
 const PageTitle = ({
   beforeHighlight,
   Highlight,
@@ -8,7 +6,7 @@ const PageTitle = ({
 }) => {
   return (
     <h2
-      className={` font-secondary text-black font-regular text-5xl ${className}`}
+      className={` font-secondary text-black font-regular text-3xl lg:text-4xl xl:text-[40px] 2xl:text-5xl ${className}`}
     >
       {beforeHighlight} <span className="text-primary">{Highlight}</span>{" "}
       {afterHighlight}
