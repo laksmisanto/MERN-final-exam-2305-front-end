@@ -120,10 +120,11 @@ const Banner = () => {
           </Grid>
         </Container>
       </div>
+
       {/* our Client list section start */}
       <div className="bg-gradient-to-bl from-[#084FC7] to-[#084ec771] py-4 lg:py-8 2xl:py-12">
         <Container>
-          <div className="flex items-center justify-between gap-x-6 lg:gap-x-24 2xl:gap-x-36">
+          <div className="w-full flex items-center gap-x-3 lg:gap-x-24 2xl:gap-x-36">
             <img src={client1} alt="Client images" className="w-full h-auto " />
             <img src={client2} alt="Client images" className="w-full h-auto " />
             <img src={client3} alt="Client images" className="w-full h-auto " />
