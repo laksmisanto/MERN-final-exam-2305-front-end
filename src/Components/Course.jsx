@@ -9,7 +9,7 @@ const Course = () => {
   return (
     <>
       <div className="bg-gradient-to-t from-courseBgBottom to-courseBgTop">
-        <Container className="py-14 lg:py-24 2xl:py-28">
+        <Container className="py-14 lg:py-24 2xl:py-28 relative">
           <div className="flex items-center flex-col">
             <PageTitle
               beforeHighlight="Featured"
@@ -65,6 +65,11 @@ const Course = () => {
             <button className="font-primary font-medium text-base lg:text-xl text-white py-4 px-8 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]">
               Explore courses
             </button>
+          </div>
+
+          {/* background effect section start */}
+          <div>
+            <div className="absolute top-6 left-4 lg:top-20 lg:left-12 size-8 lg:size-16 2xl:size-20 rounded-full border-[8px] lg:border-[16px] 2xl:border-[20px] border-primary border-opacity-20"></div>
           </div>
         </Container>
       </div>

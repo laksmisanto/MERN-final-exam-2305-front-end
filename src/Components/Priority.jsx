@@ -5,12 +5,13 @@ import priorityImage from "../assets/images/priority.png";
 import priorityLeadImage from "../assets/images/priority-lead.png";
 import priorityLeadRightImage from "../assets/images/priority-lead-right.png";
 import { FaPlay } from "react-icons/fa";
+import bgEffectImg from "../assets/images/priority-bg-effect.png";
 
 const Priority = () => {
   return (
     <>
       <div>
-        <Container className="py-14 lg:py-24 2xl:py-28">
+        <Container className="relative py-14 lg:py-24 2xl:py-28">
           <Grid className="grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-12">
             <div>
               <img src={priorityImage} alt="priority" />
@@ -55,6 +56,16 @@ const Priority = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <div className="absolute top-1/2 right-20 transform -translate-y-1/2">
+              <img
+                src={bgEffectImg}
+                alt="priority bg effect"
+                className="w-[90%] h-auto"
+              />
             </div>
           </div>
         </Container>

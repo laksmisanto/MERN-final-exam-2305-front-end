@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "./Container";
 import PageTitle from "./PageTitle";
 import PageDescription from "./PageDescription";
@@ -8,6 +7,7 @@ import testimonials2 from "../assets/images/testimonials2.png";
 import testimonials3 from "../assets/images/testimonials3.png";
 import { Rating, ThinStar } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import bgEffectImg from "../assets/images/testimonial-bg-effect.png";
 
 const Testimonials = () => {
   const RattingStyles = {
@@ -44,7 +44,7 @@ const Testimonials = () => {
   return (
     <>
       <div className="bg-gradient-to-t from-courseBgBottom to-courseBgTop">
-        <Container className="py-14 lg:py-24 2xl:py-28">
+        <Container className="relative py-14 lg:py-24 2xl:py-28">
           <div className="flex justify-center flex-col items-center">
             <PageTitle Highlight="Testimonials" className="text-center" />
             <PageDescription className="text-center mt-5 lg:mt-7 2xl:mt-10">
@@ -81,6 +81,14 @@ const Testimonials = () => {
               </div>
             ))}
           </Grid>
+
+          <div className=" absolute top-4 left-4 lg:top-8 lg:left-12">
+            <img
+              src={bgEffectImg}
+              className="w-[40%] lg:w-[90%] h-auto"
+              alt=""
+            />
+          </div>
         </Container>
       </div>
     </>

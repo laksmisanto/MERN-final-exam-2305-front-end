@@ -116,6 +116,10 @@ const Banner = () => {
                   className="w-full h-auto"
                 />
               </div>
+              {/* Curve section start */}
+              <div className="hidden lg:block">
+                <div className="absolute left-1/2 bottom-0 -translate-x-1/2 w-32 h-24 xl:w-48 xl:h-52 2xl:w-56 2xl:h-60 border-x border-t 2xl:border-x-2 2xl:border-t-2  rounded-tl-full rounded-tr-full border-white after:w-[87%] after:h-[95%] after:border-l after:border-t after:border-r 2xl:after:border-l-2 2xl:after:border-t-2 2xl:after:border-r-2 after:rounded-tl-full after:rounded-tr-full after:border-white after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:-z-10 before:w-[76%] before:h-[90%] before:border-l before:border-t before:border-r 2xl:before:border-l-2 2xl:before:border-t-2 2xl:before:border-r-2 before:rounded-tl-full before:rounded-tr-full before:border-white before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:-z-10"></div>
+              </div>
             </div>
           </Grid>
         </Container>
@@ -125,12 +129,48 @@ const Banner = () => {
       <div className="bg-gradient-to-bl from-[#084FC7] to-[#084ec771] py-4 lg:py-8 2xl:py-12 overflow-hidden">
         <Container>
           <div className="w-full flex items-center gap-x-3 lg:gap-x-24 2xl:gap-x-36">
-            <img src={client1} alt="Client images" className="w-full h-auto " />
-            <img src={client2} alt="Client images" className="w-full h-auto " />
-            <img src={client3} alt="Client images" className="w-full h-auto " />
-            <img src={client4} alt="Client images" className="w-full h-auto " />
-            <img src={client5} alt="Client images" className="w-full h-auto " />
-            <img src={client6} alt="Client images" className="w-full h-auto " />
+            <div>
+              <img
+                src={client1}
+                alt="Client images"
+                className="w-full h-auto "
+              />
+            </div>
+            <div>
+              <img
+                src={client2}
+                alt="Client images"
+                className="w-full h-auto "
+              />
+            </div>
+            <div>
+              <img
+                src={client3}
+                alt="Client images"
+                className="w-full h-auto "
+              />
+            </div>
+            <div>
+              <img
+                src={client4}
+                alt="Client images"
+                className="w-full h-auto "
+              />
+            </div>
+            <div>
+              <img
+                src={client5}
+                alt="Client images"
+                className="w-full h-auto "
+              />
+            </div>
+            <div>
+              <img
+                src={client6}
+                alt="Client images"
+                className="w-full h-auto "
+              />
+            </div>
           </div>
         </Container>
       </div>
