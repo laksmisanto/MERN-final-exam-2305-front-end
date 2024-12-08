@@ -60,7 +60,7 @@ const Priority = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="absolute top-1/2 right-20 transform -translate-y-1/2">
+            <div className="absolute lg:top-1/2 lg:right-20 transform lg:-translate-y-1/2 2xl:top-[45%] 2xl:right-14">
               <img
                 src={bgEffectImg}
                 alt="priority bg effect"
