@@ -63,7 +63,7 @@ const Category = () => {
             12,000+ unique online course list designs
           </PageDescription>
         </div>
-        <Grid className="mt-12 lg:mt-16 2xl:mt-24 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-5">
+        <Grid className="mt-12 lg:mt-16 2xl:mt-24 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 lg:gap-5">
           {categoryData.map((item, index) => (
             <div
               key={index}

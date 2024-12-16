@@ -7,6 +7,13 @@ import {
   IoLocationOutline,
   IoMailOutline,
 } from "react-icons/io5";
+import {
+  FaBehance,
+  FaDribbble,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -87,6 +94,49 @@ const Footer = () => {
                   Thakurgaon.
                 </p>
               </div>
+            </div>
+          </Grid>
+          {/*======================= Copyright Section Start =======================*/}
+          <Grid className="grid-cols-1 sm:grid-cols-2 mt-12 lg:mt-16 2xl:mt-24 gap-y-5 sm:gap-y-0">
+            <p className="font-primary font-regular text-sm text-white justify-self-center sm:justify-self-start">
+              Copyright 2023 | All Rights Reserved
+            </p>
+            <div className="flex items-center justify-self-center sm:justify-self-end gap-x-2 md:gap-x-3 xl:gap-x-4">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                className="p-1"
+              >
+                <FaFacebookF className="text-sm text-white" />
+              </a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                className="p-1"
+              >
+                <FaTwitter className="text-sm text-white" />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                className="p-1"
+              >
+                <FaInstagram className="text-sm text-white" />
+              </a>
+              <a
+                href="https://www.behance.com/"
+                target="_blank"
+                className="p-1"
+              >
+                <FaBehance className="text-sm text-white" />
+              </a>
+              <a
+                href="https://www.dribble.com/"
+                target="_blank "
+                className="p-1"
+              >
+                <FaDribbble className="text-sm text-white" />
+              </a>
             </div>
           </Grid>
         </Container>

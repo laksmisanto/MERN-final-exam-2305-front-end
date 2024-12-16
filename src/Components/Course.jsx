@@ -22,7 +22,7 @@ const Course = () => {
               eiusmod temporidunt ut labore veniam...
             </PageDescription>
           </div>
-          <Grid className="mt-12 lg:mt-16 2xl:mt-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <Grid className="mt-12 lg:mt-16 2xl:mt-24 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {CourseData.map((item, index) => (
               <div
                 key={index}
@@ -32,7 +32,7 @@ const Course = () => {
                   <img
                     src={item.image}
                     alt="course"
-                    className="rounded-t-lg lg:rounded-t-2xl 2xl:rounded-t-3xl"
+                    className="rounded-t-lg lg:rounded-t-2xl 2xl:rounded-t-3xl w-full h-auto"
                   />
                 </div>
                 <div className="p-5 lg:p-8 font-primary">

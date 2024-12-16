@@ -25,9 +25,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" bg-white relative">
+    <div className="relative bg-white ">
       <Container>
-        <nav className=" bg-white">
+        <nav className="bg-white">
           <div className="py-3 flex justify-between items-center">
             {/* Mobile Menu Toggle */}
             <button
@@ -71,7 +71,7 @@ const Navbar = () => {
             </button>
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <img src={logo} alt="Logo" className="w-auto h-10" />{" "}
+              <img src={logo} alt="Logo" className="w-auto h-8 lg:h-10" />{" "}
             </div>
 
             {/* Desktop Navigation */}
@@ -95,13 +95,11 @@ const Navbar = () => {
             </div>
 
             {/* Icons Section */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-1 md:space-x-2 lg:space-x-3">
               <button
                 type="button"
                 className="relative rounded-full p-1 text-menuColor hover:text-primary focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
-                <span className="absolute -inset-1.5" />
-                <span className="sr-only">View notifications</span>
                 <CiShoppingBasket aria-hidden="true" className="size-6" />
                 <span className="absolute -top-2 -right-2  inline-flex items-center justify-center rounded-full bg-primary px-2 py-1 text-xs font-bold leading-none text-white">
                   0
@@ -125,13 +123,13 @@ const Navbar = () => {
             <div className="hidden sm:flex space-x-4">
               <button
                 type="button"
-                className="font-primary font-medium text-xl underline p-1 text-menuColor hover:text-primary "
+                className="font-primary font-medium text-base md:text-lg xl:text-xl underline p-1 text-menuColor hover:text-primary "
               >
                 Login
               </button>
               <button
                 type="button"
-                className="font-primary font-medium text-xl text-white py-4 px-8 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]  "
+                className="font-primary font-medium text-base md:text-lg xl:text-xl text-white py-2 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-md md:rounded-lg xl:rounded-xl  "
               >
                 Sign in
               </button>
@@ -142,7 +140,7 @@ const Navbar = () => {
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } xl:hidden bg-white w-full sm:w-1/2 lg:w-1/3 sm:absolute h-screen left-0 top-20 z-50 pl-12`}
+            } xl:hidden bg-white w-full sm:w-1/2 lg:w-1/3 sm:absolute h-screen left-0 top-1 sm:top-16 md:top-[76px] z-50 pl-0 sm:pl-12 lg:pl-14 xl:pl-0 py-6`}
           >
             <div className="flex flex-col items-center sm:items-start py-4">
               {MenuData.map((item) => (

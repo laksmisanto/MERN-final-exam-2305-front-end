@@ -12,24 +12,28 @@ const Priority = () => {
     <>
       <div>
         <Container className="relative py-14 lg:py-24 2xl:py-28">
-          <Grid className="grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-12">
-            <div>
-              <img src={priorityImage} alt="priority" />
+          <Grid className="grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-y-8 md:gap-x-8 lg:gap-x-12">
+            <div className="md:self-center w-3/4 md:w-full lg:w-full mx-auto">
+              <img
+                src={priorityImage}
+                alt="priority"
+                className="w-full h-auto"
+              />
             </div>
-            <div className="self-center">
+            <div className="self-center md:col-span-2 lg:col-span-1">
               <PageTitle
                 beforeHighlight="The number one factor in"
                 Highlight="relevance drives out resistance."
                 afterHighlight=" "
                 className="text-center lg:text-left"
               />
-              <p className="font-primary font-regular text-lg text-gray text-center lg:text-left leading-7 mt-12">
+              <p className="font-primary font-regular text-lg text-gray text-center lg:text-left leading-7 mt-10 md:mt-6 lg:mt-12">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum.
               </p>
-              <div className=" w-full flex justify-center lg:justify-start mt-12">
+              <div className=" w-full flex justify-center lg:justify-start mt-8 md:mt-6 lg:mt-12">
                 <button className="font-primary font-medium text-lg text-white py-4 px-6 bg-gradient-to-r from-bgPrimary to-bgSecondary rounded-[10px]">
                   Learn More
                 </button>
