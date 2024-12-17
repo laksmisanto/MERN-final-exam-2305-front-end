@@ -20,12 +20,21 @@ const Banner = () => {
     activeFillColor: "#FAB437",
     inactiveFillColor: "#CBC2FF",
   };
+  const clientData = [
+    { id: 1, image: client1 },
+    { id: 2, image: client2 },
+    { id: 3, image: client3 },
+    { id: 4, image: client4 },
+    { id: 5, image: client5 },
+    { id: 6, image: client6 },
+  ];
   return (
     <>
       <div className="relative bg-gradient-to-tr from-bannerSecondary  to-bannerPrimary bg-opacity-10 w-full min-h-[90vh]">
-        <Container className=" pt-12 lg:pt-0">
-          <Grid className="grid-cols-1 lg:grid-cols-2  lg:gap-y-0 lg:gap-x-8 lg:self-center">
-            <div className="relative z-10 self-center">
+        <Container className=" pt-12 md:pt-20 xl:pt-0">
+          <Grid className="grid-cols-1 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-4 xl:gap-x-8 xl:self-center">
+            {/* banner text section start */}
+            <div className="relative z-10 self-center lg:pb-10 xl:pb-0">
               <p className="font-primary font-semibold text-sm lg:text-lg text-white tracking-[1px] lg:tracking-[3px] mb-8 lg:mb-12 2xl:mb-16 text-center lg:text-left">
                 Successful coaches are visionaries
               </p>
@@ -48,23 +57,25 @@ const Banner = () => {
                 </a>
               </div>
               {/* banner input section start */}
-              <div className="max-w-[490px] mt-16 xl:mt-24 2xl:mt-16">
+              <div className="max-w-[490px] mx-auto lg:mx-0 mt-16 xl:mt-24 2xl:mt-16">
                 <div className="flex items-center justify-between bg-white rounded-lg p-1 lg:p-2">
                   <input
                     type="text"
                     placeholder="What do you want to learn today?"
                     className="font-primary text-sm lg:text-base w-full rounded-lg bg-transparent px-2 lg:px-4 2xl:px-8 py-2 lg:py-4 outline-none "
                   />
-                  <button className="font-primary font-regular text-base text-white flex items-center px-4 py-2 lg:px-8 lg:py-4 gap-x-2 lg:gap-x-3 bg-gradient-to-l from-bgSecondary to-bgPrimary rounded-[10px]">
+                  <button className="font-primary font-regular text-base text-white flex items-center px-6 py-3 lg:px-8 lg:py-4 gap-x-2 lg:gap-x-3 bg-gradient-to-l from-bgSecondary to-bgPrimary rounded-[10px]">
                     <CiSearch className="text-white text-xl" />
-                    <span className="hidden md:block">Search</span>
+                    <span className="hidden sm:block">Search</span>
                   </button>
                 </div>
               </div>
             </div>
+            {/* banner input section end */}
+
             {/* banner image section start */}
-            <div className="relative w-full lg:justify-self-end mt-12 lg:mt-0">
-              <div className="relative lg:absolute lg:top-1/4 left-0 border-l-2 pl-8 border-primary lg:w-72 z-40">
+            <div className="relative w-full lg:self-end xl:self-center lg:justify-self-end mt-12 lg:mt-0">
+              <div className="relative sm:absolute sm:top-1/4 lg:-top-14 xl:top-1/4 left-0 border-l-2 pl-8 border-primary sm:w-80 lg:w-72 z-40">
                 <div className="size-8 rounded-full bg-primary flex items-center justify-center text-white absolute -left-4 top-1/2 -translate-y-1/2 outline-[4px] outline-gray ">
                   <FaQuoteLeft />
                 </div>
@@ -89,13 +100,13 @@ const Banner = () => {
                   />
                 </div>
               </div>
-              <div className="relative lg:w-[80%] 2xl:w-[90%] h-auto right-0 bottom-0 ml-auto z-10">
+              <div className="relative w-1/2 sm:w-2/5 lg:w-[80%] 2xl:w-[90%] h-auto right-0 bottom-0 ml-auto mr-auto sm:mr-0 sm:ml-auto z-10">
                 <div>
                   {" "}
                   <img
                     src={bannerImage}
                     alt=""
-                    className="relative w-full h-full z-10"
+                    className="relative w-full h-auto z-10"
                   />
                   <img
                     src={imageShadow}
@@ -128,49 +139,16 @@ const Banner = () => {
       {/* our Client list section start */}
       <div className="bg-gradient-to-bl from-[#084FC7] to-[#084ec771] py-4 lg:py-8 2xl:py-12 overflow-hidden">
         <Container>
-          <div className="w-full flex items-center gap-x-3 lg:gap-x-24 2xl:gap-x-36">
-            <div>
-              <img
-                src={client1}
-                alt="Client images"
-                className="w-full h-auto "
-              />
-            </div>
-            <div>
-              <img
-                src={client2}
-                alt="Client images"
-                className="w-full h-auto "
-              />
-            </div>
-            <div>
-              <img
-                src={client3}
-                alt="Client images"
-                className="w-full h-auto "
-              />
-            </div>
-            <div>
-              <img
-                src={client4}
-                alt="Client images"
-                className="w-full h-auto "
-              />
-            </div>
-            <div>
-              <img
-                src={client5}
-                alt="Client images"
-                className="w-full h-auto "
-              />
-            </div>
-            <div>
-              <img
-                src={client6}
-                alt="Client images"
-                className="w-full h-auto "
-              />
-            </div>
+          <div className="w-full flex items-center gap-x-5 sm:gap-x-14 md:gap-x-16 lg:gap-x-24 2xl:gap-x-36">
+            {clientData.map((item, index) => (
+              <div key={index}>
+                <img
+                  src={item.image}
+                  alt="Client images"
+                  className="w-full h-auto "
+                />
+              </div>
+            ))}
           </div>
         </Container>
       </div>
